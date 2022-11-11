@@ -1,28 +1,9 @@
-'use strict'
-let canvas = document.getElementById('canvas');
-let ctx = canvas.getContext('2d');
-
-let _width = canvas.width = window.innerWidth; 
-let _height = canvas.height = window.innerHeight; 
-console.log(_width, _height); 
 
 
 
-
-
-
-
-
-
-
-class Draw {
+class Fosolina {
     constructor(context){
         this.context = context; 
-        this.x = 0; 
-        this.y =0; 
-        this.width = 10; 
-        this.height= 10; 
-        this.color = '#fff';
     }
 
     rect(x, y, width, height, color ){
@@ -61,11 +42,4 @@ class Draw {
 
 
 }
-
-let c = new Draw(ctx); 
-
-console.log(c.rand(50,40));
-c.rect(500,500,20,20,'#f55');
-
-c.circle(500,400,20,'#fff'); 
 
