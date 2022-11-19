@@ -7,7 +7,9 @@ function loop() {
     c.fillStyle = "rgba(0,0,0,.2)";
     c.fillRect(0, 0, canvas.width, canvas.height);
 
-    if (Math.round(random(0, 25)) < 2) {
+    if (Math.round(random(0, 100)) < 2) {
+        fireworks.push(new Firework());
+        fireworks.push(new Firework());
         fireworks.push(new Firework());
     }
 
@@ -18,7 +20,7 @@ function loop() {
     }
 
 
-    if (fireworks.length >= 50) {
+    if (fireworks.length >= 15) {
         fireworks.splice(0, 1);
 
     }

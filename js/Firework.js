@@ -39,7 +39,7 @@ class Firework {
     }
 
     explode(){
-        for(let i =0; i < 100; i++){
+        for(let i =0; i < 400; i++){
             this.particles.push(new Particle(this.firework.x, this.firework.y,false,this.rgb)); 
         }
 
