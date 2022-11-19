@@ -18,7 +18,7 @@ function loop() {
     }
 
 
-    if (fireworks.length >= 100) {
+    if (fireworks.length >= 50) {
         fireworks.splice(0, 1);
 
     }
