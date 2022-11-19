@@ -1,3 +1,7 @@
+:root{
+    --color: #28f; 
+  }
+
 *{
     box-sizing: border-box;
 }
@@ -10,42 +14,24 @@ body{
 }
 
 
-.navbar{
-    margin: 0 auto;  
-    padding: 0 3rem;
-    width:100; 
-    background: #888;
-}
-
-.navbar ul{
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 0;  
-    padding: 0;
-}
-
-
-.navbar ul li a{
-    margin:.5rem;
-    display: block;
-    padding: .5rem 1rem;
-    text-decoration: none; 
-    color: #aaa;
-    background: rgb(134, 96, 96);
-}
-
-.navbar ul li a:hover{
-    background: rgb(135, 50, 50);
-    color: #fff;
-    transition: .3s;
-}
-
-main{
-    margin: 0;
-    padding: 0;
-    border: 5px solid rgb(37, 37, 37);
-}
-
+.newYear{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    text-align:center;
+    
+    
+      cursor:none;
+      color: var(--color);
+      text-shadow:
+      0 0 .5rem currentColor,
+      0 0 .6rem currentColor;
+    
+  }
+  
+  
+  
+  
+  
