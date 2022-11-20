@@ -1,6 +1,8 @@
 let canvas = document.querySelector('#canvas'); 
 let c = canvas.getContext('2d'); 
-let navbar = document.querySelectorAll('[data-navbar] li a'); 
+
+
+
 
 
 init();
@@ -9,6 +11,7 @@ function init(){
 
     canvas.width = window.innerWidth; 
     canvas.height = window.innerHeight; 
+    
 
 }
 function random(max, min){

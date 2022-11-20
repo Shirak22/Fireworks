@@ -18,6 +18,10 @@ class Particle {
             this.vy = this.vy * random(10,1);
             this.vx = this.vx * random(10,1);
             this.gravity = 0.1;
+            if(random(1000,1) < 3){
+                this.vx *= random(10,1);
+                this.vy *= random(10,1);
+            }
             
         }
    
@@ -49,6 +53,7 @@ class Particle {
             this.vy *= .9;
             this.vx *= .9;
             this.lifeSpan -= 4;
+           
             // this.vx += random(.5,-.5);
             // this.vy += random(.5,-.5);
             if (this.lifeSpan < 0) {
