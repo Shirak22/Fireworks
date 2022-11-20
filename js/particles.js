@@ -15,9 +15,9 @@ class Particle {
         }else {
             this.vy = random(2,-2); // firework radius on Y axis
             this.vx = random(2,-2); //firework radius on X axis
-            this.vy = this.vy * random(7,1);
-            this.vx = this.vx * random(7,1);
-            this.gravity =.2;
+            this.vy = this.vy * random(10,1);
+            this.vx = this.vx * random(10,1);
+            this.gravity = 0.1;
             
         }
    
